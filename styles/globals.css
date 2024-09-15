@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/assets/Satoshi/Fonts/WEB/fonts/Satoshi-Medium.ttf');
+  src: url('/assets/Satoshi/Fonts/WEB/fonts/Satoshi-Light.ttf');
+  src: url('/assets/Satoshi/Fonts/WEB/fonts/Satoshi-Bold.ttf');
+  src: url('/assets/Satoshi/Fonts/WEB/fonts/Satoshi-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Bauhaus-93';
+  src: url('/assets/Bauhaus-93/Bauhaus93Regular.ttf');
+  src: url('/assets/Bauhaus-93/BAUHS93.ttf');
+}
+
+body{
+  background-color: #160019;
+  color: white;
+}
+
+/* fonts */
+.Anton{
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+.Satoshi{
+  font-family: 'Satoshi', sans-serif;
+}
+.Bauhaus-93{
+  font-family: 'Bauhaus-93', sans-serif;
+}
+.Raleway{
+  font-family: 'Raleway', sans-serif;
+}
+.Outfit{
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  background-color: #160019;
+  color: #fff;
+
+}
+
+
+/* Dropdown for Searchbar */
+.dropdown-padding{
+  padding: 22px 0px;
+}
+
+
+.dimensions{
+  height: "599px";
+  width: "1137px";
+}
+
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-prev {
+  left: 1px;
+  z-index: 1;
+}
+
+.custom-next {
+  right: 1px;
+  z-index: 1;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
